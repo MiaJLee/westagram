@@ -6,7 +6,7 @@ const linkToMain = document.getElementsByTagName('a')[0];
 idInput.addEventListener('keyup', function(event) {
     if (idInput.value && pwInput.value) {
         loginBtn.disabled = false;
-        linkToMain.href = "file:///Users/MiaJLee/Desktop/WeCode/westagram/main.html";
+        linkToMain.href = "https://miajlee.github.io/westagram/main";
     }
     else {
         loginBtn.disabled = true;
@@ -17,7 +17,7 @@ idInput.addEventListener('keyup', function(event) {
 pwInput.addEventListener('keyup', function(event) {
     if (idInput.value && pwInput.value) {
         loginBtn.disabled = false;
-        linkToMain.href = "file:///Users/MiaJLee/Desktop/WeCode/westagram/main.html";
+        linkToMain.href = "https://miajlee.github.io/westagram/main";
     }
     else {
         loginBtn.disabled = true;
