@@ -136,6 +136,7 @@ article {
 .section-story {
     height: 212px;
     margin-bottom: 20px;
+    overflow-y: auto;
 }
 .section-recommend {
     height: 180px;

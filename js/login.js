@@ -1,28 +1,13 @@
 const idInput = document.getElementById('userID');
 const pwInput = document.getElementById('userPW');
+const loginInput = document.getElementsByClassName('container')[0];
 const loginBtn = document.getElementById('btn_login');
 const linkToMain = document.getElementsByTagName('a')[0];
 
-idInput.addEventListener('keyup', function(event) {
-    if (idInput.value && pwInput.value) {
-        loginBtn.disabled = false;
-        linkToMain.href = "https://miajlee.github.io/westagram/main";
-    }
-    else {
-        loginBtn.disabled = true;
-        linkToMain.href = "#none";
-    }
-})
-
-pwInput.addEventListener('keyup', function(event) {
-    if (idInput.value && pwInput.value) {
-        loginBtn.disabled = false;
-        linkToMain.href = "https://miajlee.github.io/westagram/main";
-    }
-    else {
-        loginBtn.disabled = true;
-        linkToMain.href = "#none";
-    }
+loginInput.addEventListener('keyup', function(event) {
+    const completedInput = !!(idInput.value && pwInput.value);
+    loginBtn.disabled = completedInput ? false : true;
+    linkToMain.href = completedInput ? "https://miajlee.github.io/westagram/main" : "#none"; 
 })
 
 document.addEventListener('keyup', function(event) {
