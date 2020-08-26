@@ -226,9 +226,32 @@ ul.comments li {
     color: #262626;
     font-size: 14px;
 }
+.comments li div {
+    display: flex;
+    align-items: center;
+}
+ul.comments li:hover .comment-more {
+    display: inline-block;
+}
+img.comment-more {
+    box-sizing: content-box;
+    width: 26px;
+    padding: 10px;
+    display: none;
+    opacity: 50%;
+    cursor: pointer;
+}
 img.comment-heart {
     width: 12px;
     height: 12px;
+    display: inline-block;
+    cursor: pointer;
+}
+img.comment-heart-liked {
+    width: 12px;
+    height: 12px;
+    display: none;
+    cursor: pointer;
 }
 div.time-log {
     margin-bottom: 8px;
